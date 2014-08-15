@@ -1,10 +1,124 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
 /* 
-    Created on : 31/07/2014, 22:52:07
-    Author     : Avell B153
+Theme Name: Mauad
+Theme URI: http://www.ndrade.com.br/
+Author: Julian Andrade
+Author URI: http://www.ndrade.com.br/
+Description: Mauad
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+Text Domain: mauad
 */
 
+/*.container {}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}*/
+
+body {
+	/*background-color: #FFF;*/
+	min-width: 300px;
+}
+
+/* HEADER */
+header {
+	background-color: #00415D;
+	height: 107px;
+	position: relative;
+	z-index: 16;
+	box-shadow: #333 0 0 6px;
+}
+header ul {
+	background-color: rgba(30, 30, 30, 0.8);
+}
+header .navbar-default .navbar-toggle {
+	border-color: #FFF;
+	margin-right: 0;
+	margin-top: 60px;
+	
+}
+header .navbar-default .navbar-toggle:focus,
+header .navbar-default .navbar-toggle:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+header .navbar-default .navbar-toggle .icon-bar {
+	background: #FFF;
+}
+header .navbar-brand {
+	padding: 10px;
+}
+header h1 {
+	margin: 0;
+}
+
+header .navbar-collapse {
+	border-width: 0;
+	box-shadow: 0 0 0 transparent;
+}
+
+@media (min-width: 768px) {
+	header #navbar-collapse {
+		float: right;
+	}
+
+	header ul {
+		background-color: transparent;
+	}
+	header .navbar-nav > li > a {
+		margin-top: 30px;
+	}
+	
+}
+
+/* FOOTER */
+footer {
+	background-color: #00415D;
+	border-top: 10px solid #217194;
+	padding-bottom: 20px;
+}
+footer .navbar-nav{
+	padding-left: 0;
+	max-width: 300px;
+	margin: 0 auto;
+}
+footer nav img {
+	padding-top: 15px;
+}
+@media (min-width: 768px) {
+	footer .navbar-nav {
+		max-width: none;
+	}
+}
+@media (min-width: 992px) {
+	footer .navbar-nav {
+		float: right;
+	}
+	footer .navbar-nav > li > a {
+		margin-top: 30px;
+	}
+}
+
+/* PAGES */
+article {
+	color: #2e3f2c;
+}
+article.commom-content {
+	padding: 15px 0;
+}
+article .img-responsive {
+	margin-left: auto;
+	margin-right: auto;
+}

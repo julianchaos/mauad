@@ -1,0 +1,27 @@
+/* 
+Theme Name: Mauad
+Theme URI: http://www.ndrade.com.br/
+Author: Julian Andrade
+Author URI: http://www.ndrade.com.br/
+Description: Mauad
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+Text Domain: mauad
+*/
+
+header {
+	background: transparent url(../images/bg-menu-superior.png);
+}
+footer {
+	background: transparent url(../images/bg-footer.png);
+}
+
+article {
+	background: transparent url(../images/bg-madeira-branca.jpg);
+}
+
+article.front-page {
+	background: #FFF none;
+}

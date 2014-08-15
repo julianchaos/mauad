@@ -25,6 +25,9 @@
 function mauad_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menu( 'primary', __( 'Primary Menu', 'mauad' ) );
+	
+	// Register custom navigation walker
+	require_once('inc/wp_bootstrap_navwalker.php');
 }
 add_action( 'after_setup_theme', 'mauad_setup' );
 
@@ -38,5 +41,12 @@ function mauad_scripts_styles() {
 	 */
 	wp_enqueue_script( 'mauad-bootstrap', '//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js', array('jquery'), '3.1.1', false);
 	wp_enqueue_style( 'mauad-bootstrap', '//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css', array(), '3.1.1');
+
+	//Backgrounds
+	wp_enqueue_style( 'mauad-background', get_template_directory_uri() . '/css/background.css', array(), '1.0');
+	
+	//Navbar-default overide
+	wp_enqueue_style( 'mauad-nav', get_template_directory_uri() . '/css/navbar-default.css', array('mauad-bootstrap'), '1.0');
+
 }
 add_action( 'wp_enqueue_scripts', 'mauad_scripts_styles' );
