@@ -12,10 +12,16 @@ Text Domain: mauad
 */
 
 header {
-	background: transparent url(../images/bg-menu-superior.png);
+	background: #00415D none;
 }
+
 footer {
-	background: transparent url(../images/bg-footer.png);
+	background: transparent none;
+}
+@media (min-width: 768px) {
+	footer {
+		background-image: url('../images/bg-footer.png');
+	}
 }
 
 article {

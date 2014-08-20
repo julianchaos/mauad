@@ -35,7 +35,6 @@ body {
 
 /* HEADER */
 header {
-	background-color: #00415D;
 	height: 107px;
 	position: relative;
 	z-index: 16;
@@ -87,29 +86,44 @@ header .navbar-collapse {
 footer {
 	background-color: #00415D;
 	border-top: 10px solid #217194;
+	color: #FFF;
+	text-align: center;
 	padding-bottom: 20px;
+	/*line-height: 2.2em;*/
 }
-footer .navbar-nav{
-	padding-left: 0;
-	max-width: 300px;
+footer .img-responsive {
 	margin: 0 auto;
 }
-footer nav img {
-	padding-top: 15px;
+footer .container,
+footer .assinaturas {
+	padding-top: 10px;
+}
+footer .mauad-footer-info a {
+	float: left;
+}
+footer .mauad-footer-info p {
+	margin-top: 10px;
+	font-size: 0.9em;
+	text-transform: uppercase;
 }
 @media (min-width: 768px) {
-	footer .navbar-nav {
-		max-width: none;
+	footer {
+		max-height: 109px;
+		overflow: hidden;
 	}
+	footer .row {
+		margin: 10px 15px;
+	}
+	footer .mauad-footer-info p {
+		margin-top: 20px;
+		font-size: 1em;
+		text-align: left;
+		float: left;
+		padding-left: 12px;
+	}
+	
 }
-@media (min-width: 992px) {
-	footer .navbar-nav {
-		float: right;
-	}
-	footer .navbar-nav > li > a {
-		margin-top: 30px;
-	}
-}
+
 
 /* PAGES */
 article {
