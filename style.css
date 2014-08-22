@@ -218,12 +218,37 @@ footer .mauad-footer-info p {
 
 /* PAGES */
 article {
+	background-color: #e5e9ec;
 	color: #2e3f2c;
 }
-article.commom-content {
-	padding: 15px 0;
+
+article .alignright {
+	float: right;
 }
 article .img-responsive {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+article .breadcrumb {
+	text-transform: uppercase;
+}
+article .breadcrumb li,
+article .breadcrumb a,
+article .breadcrumb a:hover {
+	color: #999
+}
+
+article h1,
+article h2 {
+	text-transform: uppercase;
+}
+
+/* QUEM SOMOS */
+article.quem-somos img.alignright {
+	margin-left: 15px;
+}
+article.quem-somos p {
+	font-size: 22px;
+	color: #58595d;
 }
