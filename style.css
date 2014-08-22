@@ -200,6 +200,20 @@ footer .mauad-footer-info p {
 		font-size: 21px;
 		margin-bottom: 20px;
 	}
+	.front-page .carousel-caption {
+		/*padding-left: 15px;*/
+		left: 12%;
+		right: inherit;
+		padding: 0 50px 0 15px;
+	}
+	.front-page .carousel-caption h2,
+	.front-page .carousel-caption h3 {
+		text-align: left;
+		font-size: 28px;
+	}
+	.front-page .carousel-caption h2 {
+		font-size: 32px;
+	}
 }
 
 /* PAGES */
