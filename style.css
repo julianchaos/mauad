@@ -32,6 +32,9 @@ body {
 	/*background-color: #FFF;*/
 	min-width: 300px;
 }
+h1, h2, h3, h4, h5, h6, p {
+	color: #00415d;
+}
 
 /* HEADER */
 header {
@@ -86,7 +89,6 @@ header .navbar-collapse {
 footer {
 	background-color: #00415D;
 	border-top: 10px solid #217194;
-	color: #FFF;
 	text-align: center;
 	padding-bottom: 20px;
 	/*line-height: 2.2em;*/
@@ -102,6 +104,7 @@ footer .mauad-footer-info a {
 	float: left;
 }
 footer .mauad-footer-info p {
+	color: #FFF;
 	margin-top: 10px;
 	font-size: 0.9em;
 	text-transform: uppercase;
@@ -137,6 +140,7 @@ footer .mauad-footer-info p {
 }
 .front-page .carousel-caption h2,
 .front-page .carousel-caption h3 {
+	color: #FFF;
 	margin-top: 10px;
 }
 .front-page .carousel-caption h2 {
@@ -148,6 +152,8 @@ footer .mauad-footer-info p {
 
 .front-page #primary {
 	text-align: center;
+	border-top: 22px solid #00415d;
+	background-color: #e5e9ec;
 }
 .front-page #primary h1 {
 	text-transform: uppercase;
