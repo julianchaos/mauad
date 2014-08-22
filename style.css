@@ -195,6 +195,13 @@ footer .mauad-footer-info p {
 	text-transform: uppercase;
 }
 
+@media (min-width: 768px) {
+	.front-page #primary p {
+		font-size: 21px;
+		margin-bottom: 20px;
+	}
+}
+
 /* PAGES */
 article {
 	color: #2e3f2c;
