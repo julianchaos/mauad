@@ -50,7 +50,17 @@ Text Domain: mauad
 }
 
 @media (min-width: 768px) {
-	.navbar-default .navbar-nav > li > a {
-		border-radius: 5px;
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, 
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+		color: #00415D;
+		background-color: transparent;
+	}
+	.navbar-default .navbar-nav > li > .dropdown-menu {
+		margin-top: 2px;
+		/*border-radius: 0;*/
+		background-color: rgba(255, 255, 255, 0.85);
 	}
 }

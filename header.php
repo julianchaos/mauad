@@ -28,7 +28,7 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-							<div id="headerimg" class="navbar-brand hidden-sm">
+							<div id="headerimg" class="navbar-brand">
 								<h1>
 									<a href="<?php echo home_url() ?>/" title="<?php bloginfo('name') ?>">
 										<img src="<?php bloginfo('template_directory') ?>/images/logo-menu-superior.png" alt="<?php bloginfo('name') ?>" />

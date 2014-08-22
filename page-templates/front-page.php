@@ -51,7 +51,7 @@
 	<div id="primary">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12">
+				<div class="col-xs-12 col-sm-offset-1 col-sm-10">
 					<h1>Mauad</h1>
 					<p>Da segunda geração de uma família de arquitetos nasceu o desejo de resgatar o trabalho de arquitetura pela assunção da responsabilidade e coordenação de todas as fases do empreendimento.</p>
 					<p>Entendemos que a harmonia e a beleza de uma construção não se encerram no projeto, nascem dele e se consolidam na obra acabada, depois de retirado o último andaime.</p>

@@ -72,18 +72,54 @@ header .navbar-collapse {
 }
 
 @media (min-width: 768px) {
-	header #navbar-collapse {
-		float: right;
+	header {
+		overflow: hidden;
 	}
-
-	header ul {
-		background-color: transparent;
-	}
-	header .navbar-nav > li > a {
-		margin-top: 30px;
+	header a {
+		font-size: 16px;
+		text-transform: uppercase;
 	}
 	
+	header .caret {
+		display: none;
+	}
+	header #navbar-header,
+	header #navbar-collapse {
+		float: left;
+	}
+	header #navbar-collapse {
+		width: 630px;
+		padding: 0;
+	}
+	header .navbar-nav {
+		background-color: transparent;
+		margin-top: 20px;
+	}
+	header .navbar-default .navbar-nav > li > a, 
+	header .navbar-nav > li > a {
+		border-width: 0;
+		padding: 10px 7px 0;
+	}
+	header .navbar-nav > li > .dropdown-menu {
+		margin-top: 2px;
+		border-radius: 0;
+		background-color: rgba(255, 255, 255, 0.85);
+	}
 }
+@media (min-width: 992px) {
+	header #navbar-collapse {
+		width: 852px;
+	}
+}
+@media (min-width: 1200px) {
+	header #navbar-collapse {
+		width: inherit;
+	}
+	header .navbar-nav {
+		margin-top: 32px;
+	}
+}
+
 
 /* FOOTER */
 footer {
