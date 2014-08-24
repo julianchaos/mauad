@@ -1,5 +1,7 @@
 <?php
 /**
+ * Template Name: Subpáginas Obras
+ * 
  * @link http://codex.wordpress.org/Template_Hierarchy
  *
  * @package Ndrade
@@ -12,7 +14,7 @@
 	<div id="primary" class="container">
 		<div id="content" role="main">
 			<ol class="breadcrumb">
-				<li>Home</li>
+				<li>OBras</li>
 				<li class="active"><?php the_title() ?></li>
 			</ol>
 			<h1><?php the_title() ?></h1>

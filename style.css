@@ -73,7 +73,7 @@ header .navbar-collapse {
 
 @media (min-width: 768px) {
 	header {
-		overflow: hidden;
+		/*overflow: hidden;*/
 	}
 	header a {
 		font-size: 16px;
@@ -232,6 +232,7 @@ article .img-responsive {
 
 article .breadcrumb {
 	text-transform: uppercase;
+	background-color: transparent;
 }
 article .breadcrumb li,
 article .breadcrumb a,
@@ -251,4 +252,46 @@ article.quem-somos img.alignright {
 article.quem-somos p {
 	font-size: 22px;
 	color: #58595d;
+}
+
+/* FORMS */
+form .form-control {
+	color: #FFF;
+	background-color: #00415d;
+}
+.form-control::-moz-placeholder{color:#FFF;opacity:1;font-weight: bold;}
+.form-control:-ms-input-placeholder{color:#FFF;font-weight: bold;}
+.form-control::-webkit-input-placeholder{color:#FFF;font-weight: bold;}
+
+form .form-control[type=submit] {
+	border: 2px solid #00415d;
+	background-color: transparent;
+	color: #00415D;
+	font-weight: bold;
+}
+form textarea.form-control {
+	height: 88px !important;
+}
+
+
+.obras .col-md-3,
+.obras .col-md-4 {
+	padding: 0;
+}
+.obras > div > div {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	visibility: hidden;
+	background-color: rgba(0, 65, 93, 0.5);
+	padding: 0 12px 12px 12px;
+}
+.obras > div > div h1,
+.obras > div > div p {
+	color: #FFF;
+}
+.obras > div:hover > div {
+	visibility: visible
 }
