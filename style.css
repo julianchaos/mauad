@@ -71,6 +71,11 @@ header .navbar-collapse {
 	box-shadow: 0 0 0 transparent;
 }
 
+header .header-home {
+	float: left;
+	margin-top: 38px;
+}
+
 @media (min-width: 768px) {
 	header {
 		/*overflow: hidden;*/

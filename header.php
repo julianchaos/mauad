@@ -31,7 +31,7 @@
 							<div id="headerimg" class="navbar-brand">
 								<h1>
 									<a href="<?php echo home_url() ?>/" title="<?php bloginfo('name') ?>">
-										<img src="<?php bloginfo('template_directory') ?>/images/logo-menu-superior.png" alt="<?php bloginfo('name') ?>" />
+										<img src="<?php bloginfo('template_directory') ?>/images/layout/logo-header.png" alt="<?php bloginfo('name') ?>" />
 									</a>
 								</h1>
 							</div>
@@ -39,6 +39,9 @@
 
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="navbar-collapse">
+							<a href="<?= home_url() ?>/" title="<?php bloginfo('name') ?>" class="header-home">
+								<img src="<?php bloginfo('template_directory') ?>/images/layout/home-icon.png" alt="<?php bloginfo('name') ?>" />
+							</a>
 <?php
 wp_nav_menu( array( 
 	'menu' => 'top_menu',

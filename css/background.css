@@ -20,14 +20,6 @@ footer {
 }
 @media (min-width: 768px) {
 	footer {
-		background-image: url('../images/bg-footer.png');
+		background-image: url('../images/layout/bg-footer.png');
 	}
-}
-
-article {
-	background: transparent url(../images/bg-madeira-branca.jpg);
-}
-
-article.front-page {
-	background: #FFF none;
 }
