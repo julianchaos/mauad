@@ -263,11 +263,20 @@ article.quem-somos p {
 form .form-control {
 	color: #FFF;
 	background-color: #00415d;
+	background-repeat: no-repeat;
+	background-position-x: 98.5%;
+	background-position-y: 50%;
 }
 .form-control::-moz-placeholder{color:#FFF;opacity:1;font-weight: bold;}
 .form-control:-ms-input-placeholder{color:#FFF;font-weight: bold;}
 .form-control::-webkit-input-placeholder{color:#FFF;font-weight: bold;}
 
+form .form-control[name=your-name] {
+	background-image: url('images/form/icone-nome.png');
+}
+form .form-control[name=your-email] {
+	background-image: url('images/form/icone-email.png');
+}
 form .form-control[type=submit] {
 	border: 2px solid #00415d;
 	background-color: transparent;
@@ -279,6 +288,7 @@ form textarea.form-control {
 }
 
 
+/* galeria de construções */
 .obras .col-md-3,
 .obras .col-md-4 {
 	padding: 0;
