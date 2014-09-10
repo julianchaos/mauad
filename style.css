@@ -29,11 +29,14 @@ Text Domain: mauad
 }*/
 
 body {
-	/*background-color: #FFF;*/
+	background-color: #00415D;
 	min-width: 300px;
 }
 h1, h2, h3, h4, h5, h6, p {
 	color: #00415d;
+}
+body + object {
+	display: none;
 }
 
 /* HEADER */
@@ -73,7 +76,7 @@ header .navbar-collapse {
 
 header .header-home {
 	float: left;
-	margin-top: 38px;
+	margin: 38px 15px 0;
 }
 
 @media (min-width: 768px) {
@@ -129,7 +132,7 @@ header .header-home {
 /* FOOTER */
 footer {
 	background-color: #00415D;
-	border-top: 10px solid #217194;
+	/*border-top: 10px solid #217194;*/
 	text-align: center;
 	padding-bottom: 20px;
 	/*line-height: 2.2em;*/
@@ -156,7 +159,10 @@ footer .mauad-footer-info p {
 		overflow: hidden;
 	}
 	footer .row {
-		margin: 10px 15px;
+		margin: 15px;
+	}
+	footer .mauad-footer-info {
+		margin-top: 7px;
 	}
 	footer .mauad-footer-info p {
 		margin-top: 20px;
@@ -202,7 +208,7 @@ footer .mauad-footer-info p {
 
 @media (min-width: 768px) {
 	.front-page #primary p {
-		font-size: 21px;
+		font-size: 20px;
 		margin-bottom: 20px;
 	}
 	.front-page .carousel-caption {
@@ -289,6 +295,12 @@ form textarea.form-control {
 
 
 /* galeria de construções */
+.obras {
+	margin-bottom: 50px;
+}
+.obras p {
+	margin: 0;
+}
 .obras .col-md-3,
 .obras .col-md-4 {
 	padding: 0;
