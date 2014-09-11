@@ -28,14 +28,21 @@
 				<img src="<?php bloginfo('template_directory') ?>/images/slide/slide-01.jpg" alt="..." />
 				<div class="carousel-caption">
 					<h2>Fundação Oscar Niemayer</h2>
-					<h3>Rio de Janeiro</h3>
+					<h3>Niterói</h3>
 				</div>
 			</div>
 			<div class="item">
-				<img src="<?php bloginfo('template_directory') ?>/images/slide/slide-01.jpg" alt="..." />
+				<img src="<?php bloginfo('template_directory') ?>/images/slide/slide-02.jpg" alt="..." />
 				<div class="carousel-caption">
-					<h2>Teste</h2>
-					<h3>teste</h3>
+					<h2>Estação Charitas</h2>
+					<h3>Niterói</h3>
+				</div>
+			</div>
+			<div class="item">
+				<img src="<?php bloginfo('template_directory') ?>/images/slide/slide-03.jpg" alt="..." />
+				<div class="carousel-caption">
+					<h2>Leader Catete</h2>
+					<h3>Rio de Janeiro</h3>
 				</div>
 			</div>
 		</div>

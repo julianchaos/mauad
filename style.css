@@ -319,6 +319,9 @@ form textarea.form-control {
 .obras > div > div p {
 	color: #FFF;
 }
+.obras > div > div > h1 + p {
+	display: none;
+}
 .obras > div:hover > div {
 	visibility: visible
 }
