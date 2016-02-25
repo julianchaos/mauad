@@ -27,7 +27,11 @@ Text Domain: mauad
     width: 1170px;
   }
 }*/
-
+html, body {
+	height: 100%;
+	margin:0;
+	padding:0;
+}
 body {
 	background-color: #00415D;
 	min-width: 300px;
@@ -37,6 +41,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 body + object {
 	display: none;
+}
+#page {
+	min-height: 100%;
+	position: relative;
+	background-color: #e5e9ec;
 }
 
 /* HEADER */
@@ -128,14 +137,16 @@ header .header-home {
 	}
 }
 
-
 /* FOOTER */
 footer {
 	background-color: #00415D;
-	/*border-top: 10px solid #217194;*/
 	text-align: center;
-	padding-bottom: 20px;
-	/*line-height: 2.2em;*/
+	
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 footer .img-responsive {
 	margin: 0 auto;
@@ -143,6 +154,9 @@ footer .img-responsive {
 footer .container,
 footer .assinaturas {
 	padding-top: 10px;
+}
+footer .assinaturas {
+	padding-top: 20px;
 }
 footer .mauad-footer-info a {
 	float: left;
@@ -231,6 +245,7 @@ footer .mauad-footer-info p {
 article {
 	background-color: #e5e9ec;
 	color: #2e3f2c;
+	padding-bottom: 122px;
 }
 
 article .alignright {
@@ -255,6 +270,11 @@ article h1,
 article h2 {
 	text-transform: uppercase;
 }
+@media (min-width: 768px) {
+	article {
+		padding-bottom: 107px;
+	}
+}
 
 /* QUEM SOMOS */
 article.quem-somos img.alignright {
@@ -270,8 +290,8 @@ form .form-control {
 	color: #FFF;
 	background-color: #00415d;
 	background-repeat: no-repeat;
-	background-position-x: 98.5%;
-	background-position-y: 50%;
+	background-position: 98.5% 50%;
+	border: 0;
 }
 .form-control::-moz-placeholder{color:#FFF;opacity:1;font-weight: bold;}
 .form-control:-ms-input-placeholder{color:#FFF;font-weight: bold;}
@@ -294,7 +314,7 @@ form textarea.form-control {
 }
 
 
-/* galeria de construções */
+/* galeria de obras, clientes e projetos */
 .obras {
 	margin-bottom: 50px;
 }
@@ -311,17 +331,78 @@ form textarea.form-control {
 	right: 0;
 	left: 0;
 	bottom: 0;
-	visibility: hidden;
+	opacity: 0;
 	background-color: rgba(0, 65, 93, 0.5);
 	padding: 0 12px 12px 12px;
+	
+   -webkit-transition: all 0.4s ease-in-out;
+   -moz-transition: all 0.4s ease-in-out;
+   -o-transition: all 0.4s ease-in-out;
+   -ms-transition: all 0.4s ease-in-out;
+   transition: all 0.4s ease-in-out;
+
 }
-.obras > div > div h1,
-.obras > div > div p {
+.obras > div > div > a{
+	display: block;
+	height: 100%;
+}
+.obras > div > div > a:hover {
+	text-decoration: none;
+}
+.obras > div > div h1 {
 	color: #FFF;
 }
-.obras > div > div > h1 + p {
-	display: none;
-}
 .obras > div:hover > div {
-	visibility: visible
+	opacity: 1;
+}
+.projetos {
+	max-width: 1086px;
+	margin: auto;
+}
+.projetos > div {
+	padding: 0;
+}
+
+/* detalhes de construções */
+.single-obras article > .container {
+	padding-bottom: 60px;
+}
+.single-obras .obras-voltar {
+	color: #00415d;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+.single-obras p {
+	font-size: 16px;
+}
+.single-obras .obras-ano {
+	float: right;
+}
+.single-obras .obras-ano,
+.single-obras .obras-local {
+	text-transform: uppercase;
+}
+.single-obras .obras-galeria div div{
+	padding: 0;
+}
+.single-obras .mask {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0, 65, 93, 0.5);
+	background-image: url(images/layout/icone-aumentar.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0;
+
+   -webkit-transition: all 0.4s ease-in-out;
+   -moz-transition: all 0.4s ease-in-out;
+   -o-transition: all 0.4s ease-in-out;
+   -ms-transition: all 0.4s ease-in-out;
+   transition: all 0.4s ease-in-out;
+}
+.single-obras a.cboxElement:hover .mask {
+	opacity: 1;
 }

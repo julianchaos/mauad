@@ -15,6 +15,7 @@
 		<?php wp_head() ?>
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+		<link rel="shortcut icon" href="<?= get_stylesheet_directory_uri() ?>/images/favicon.ico" />
 	</head>
 	<body <?php body_class(); ?>>
 		<div id="page">
@@ -39,9 +40,6 @@
 
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="navbar-collapse">
-							<a href="<?= home_url() ?>/" title="<?php bloginfo('name') ?>" class="header-home">
-								<img src="<?php bloginfo('template_directory') ?>/images/layout/home-icon.png" alt="<?php bloginfo('name') ?>" />
-							</a>
 <?php
 wp_nav_menu( array( 
 	'menu' => 'top_menu',

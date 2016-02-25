@@ -22,16 +22,24 @@
  * @since 1.0
  */
 
-function mauad_setup() {
+function mauad_setup()
+{
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menu( 'primary', __( 'Primary Menu', 'mauad' ) );
 	
 	// Register custom navigation walker
 	require_once('inc/wp_bootstrap_navwalker.php');
+
+	add_theme_support('post-thumbnails');
+
+	add_image_size('galeria-obras', 293, 241, true);
+	add_image_size('galeria-clientes', 156, 140, true);
+	add_image_size('galeria-projetos', 362, 297, true);
 }
 add_action( 'after_setup_theme', 'mauad_setup' );
 
-function mauad_scripts_styles() {
+function mauad_scripts_styles()
+{
 	//jQuery
 	wp_enqueue_script( 'jquery');
 	
@@ -41,6 +49,9 @@ function mauad_scripts_styles() {
 	 */
 	wp_enqueue_script( 'mauad-bootstrap', '//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js', array('jquery'), '3.1.1', false);
 	wp_enqueue_style( 'mauad-bootstrap', '//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css', array(), '3.1.1');
+	
+	//My Stuff
+	wp_enqueue_script( 'mauad-menu', get_template_directory_uri() . '/js/menu.js', array('jquery'), '1.0', false);
 
 	//Backgrounds
 	wp_enqueue_style( 'mauad-background', get_template_directory_uri() . '/css/background.css', array(), '1.0');

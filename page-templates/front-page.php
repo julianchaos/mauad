@@ -24,28 +24,27 @@
 
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner">
-<?php
-if( have_rows('imagens_slider') ):
-
-	$active = true;
-    while ( have_rows('imagens_slider') ) :
-		the_row();
-		$activeClass = ($active ? 'active' : null);
-?>	
-			<div class="item <?= $activeClass ?>">
-				<img src="<?php the_sub_field('imagem') ?>" alt="..." />
+			<div class="item active">
+				<img src="<?php bloginfo('template_directory') ?>/images/slide/slide-01.jpg" alt="..." />
 				<div class="carousel-caption">
-					<h2><?php the_sub_field('titulo') ?></h2>
-					<h3><?php the_sub_field('cidade') ?></h3>
+					<h2>Fundação Oscar Niemeyer</h2>
+					<h3>Niterói</h3>
 				</div>
 			</div>
-			
-		
-<?php	
-		$active = false;
-    endwhile;
-endif;
-?>
+			<div class="item">
+				<img src="<?php bloginfo('template_directory') ?>/images/slide/slide-02.jpg" alt="..." />
+				<div class="carousel-caption">
+					<h2>Estação Charitas</h2>
+					<h3>Niterói</h3>
+				</div>
+			</div>
+			<div class="item">
+				<img src="<?php bloginfo('template_directory') ?>/images/slide/slide-03.jpg" alt="..." />
+				<div class="carousel-caption">
+					<h2>Leader Catete</h2>
+					<h3>Rio de Janeiro</h3>
+				</div>
+			</div>
 		</div>
 
 		<!-- Controls -->
@@ -61,9 +60,9 @@ endif;
 			<div class="row">
 				<div class="col-xs-12 col-sm-offset-1 col-sm-10">
 					<h1>Mauad</h1>
-					<?php while ( have_posts() ) : the_post(); ?>
-						<?php the_content(); ?>
-					<?php endwhile; // end of the loop. ?>
+					<p>Da segunda geração de uma família de arquitetos nasceu o desejo de resgatar o trabalho de arquitetura pela assunção da responsabilidade e coordenação de todas as fases do empreendimento.</p>
+					<p>Entendemos que a harmonia e a beleza de uma construção não se encerram no projeto, nascem dele e se consolidam na obra acabada, depois de retirado o último andaime.</p>
+					<p>Desejamos criar e, mais do que isso, essencialmente, realizar.</p>
 				</div>
 			</div>
 		</div>

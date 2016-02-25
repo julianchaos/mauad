@@ -50,14 +50,6 @@ Text Domain: mauad
 }
 
 @media (min-width: 768px) {
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a,
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, 
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-		color: #00415D;
-		background-color: transparent;
-	}
 	.navbar-default .navbar-nav > li > .dropdown-menu {
 		margin-top: 2px;
 		border-radius: 0;
@@ -68,7 +60,41 @@ Text Domain: mauad
 		box-shadow: 2px 4px 6px -1px #333;
 		border: 0px solid #FFF;
 	}
+	
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, 
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+		color: #00415D;
+		background-color: transparent;
+	}
 	.navbar-default .navbar-nav > li > .dropdown-menu > li {
 		background-color: rgba(255, 255, 255, 0.8);
+	}
+	.navbar-default .navbar-nav > li > .dropdown-menu > li a:hover {
+		color: #288ab1 !important;
+	}
+	
+	.navbar-default .navbar-nav > li + li a{
+		padding-left: 0 !important;
+	}
+	.navbar-default .navbar-nav > li + li a:before{
+		content: "|";
+		padding-right: 6px;
+	}
+	.navbar-default .navbar-nav > li + li a:hover:before{
+		color: #FFF;
+	}
+	.navbar-default .navbar-nav > li.has-image a:before,
+	.navbar-default .navbar-nav > li.has-image + li a:before,
+	.navbar-default .navbar-nav ul.dropdown-menu li a:before{
+		content: "";
+		padding-right: 0;
+	}
+	.navbar-default .navbar-nav > li.has-image a,
+	.navbar-default .navbar-nav > li.has-image + li a,
+	.navbar-default .navbar-nav ul.dropdown-menu li a{
+		padding-left: 7px !important;
 	}
 }
